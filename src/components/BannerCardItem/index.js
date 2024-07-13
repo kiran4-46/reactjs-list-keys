@@ -8,12 +8,12 @@ const Card = props => {
   const {details} = props
   const {headerText, description, className} = details
   return (
-    <li className="list">
+    <li className={`${className} list`}>
       <div>
         <h1 className={heading}>{headerText}</h1>
         <p className={descript}>{description}</p>
         <button className={btn} type="button">
-          ShowMore
+          Show More
         </button>
       </div>
     </li>
